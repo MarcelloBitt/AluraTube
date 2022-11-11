@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
+// import Capa from "../src/Images/capa.jpeg";
 
 function HomePage() {
   const estilosHomePage = {};
@@ -42,9 +43,11 @@ const StyledHeader = styled.div`
     gap: 16px;
   }
 `;
+
 function Header() {
   return (
     <StyledHeader>
+      <img className="banner" src="#"></img>
       <section className="user-info">
         <a href={`https://github.com/${config.github}`} target="_blank">
           <img src={`https://github.com/${config.github}.png`} />{" "}
